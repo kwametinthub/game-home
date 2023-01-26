@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="./img-vid/img/fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w-full max-w-4xl mx-auto bg-slate-900">
+  <div class="fixed top-0 left-0 right-0 z-10 bg-slate-800">
+    <div class="px-3 mx-auto">
+      <nav class="flex items-center justify-between w-full max-w-4xl px-3 py-3 mx-auto">
+        <div>
+          <h1 class="text-sm font-bold text-white uppercase">
+            Game <span class="text-orange-700 font-light !important">store</span>
+          </h1>
+        </div>
+        <di class="flex space-x-3 ">
+          <div class="grid w-8 h-8 p-1 text-white rounded-full bg-slate-700 place-content-center hover:cursor-pointer"
+            id="bell">
+            <i class="relative bx bx-bell">
+              <div class="absolute top-0 w-1 h-1 bg-red-700 rounded-full right-1 hover:bg-red-600"></div>
+            </i>
+          </div>
+          <div class="grid w-8 h-8 p-1 text-white rounded-full bg-slate-700 place-content-center hover:cursor-pointer">
+            <i class="bx bxs-download"></i>
+          </div>
+          <div class="grid w-8 h-8 p-1 text-white rounded-full bg-slate-700 place-content-center hover:cursor-pointer">
+            <i class="bx bx-menu "></i>
+          </div>
+    </div>
+    <div class="flex justify-end hidden w-full max-w-4xl px-3 py-3 mx-auto" id="notify-item">
+      <div class="z-20 w-48 h-64 transition duration-300 ease-in-out rounded-md bg-slate-700 ">
+        <div class="p-2">
+          <div class="flex gap-2 p-2 text-white rounded-md bg-slate-900 ">
+            <i class='text-yellow-300 bx bxs-check-circle'></i>
+            <p class="text-xs font-thin">Congratulation,Your game download successfully</p>
+          </div>
+        </div>
+        <div class="p-2 ">
+          <div class="flex gap-2 p-2 text-white rounded-md bg-slate-600">
+            <i class='text-red-500 bx bxs-radiation'></i>
+            <p class="text-xs font-thin">Could not apply changes</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </nav>
+  </div>
+  </div>
+  <div class="px-3 mx-auto mt-20">
+    <div class="relative w-full mx-auto mt-4 overflow-hidden rounded-md h-52 sm:h-72">
+      <img src="./img-vid/img/home.png" alt="" class="object-cover object-center w-full h-full">
+      <div class="absolute flex flex-col right-10 bottom-1/3 justify-items-end">
+        <h1 class="flex flex-col font-bold text-right uppercase sm:text-3xl">City of the <br> <span> future</span> </h1>
+        <div class="flex justify-end mt-2 text-sm font-bold text-white uppercase ">
+          <p class="px-4 py-3 bg-orange-600 rounded-bl-2xl drop-shadow-lg"> available
+
+            now</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="px-3 mx-auto mt-10">
+    <div class="flex items-center space-x-2">
+      <div class="grid w-6 h-6 text-white bg-orange-700 rounded-full place-content-center">
+        <i class='bx bxs-hot'></i>
+      </div>
+      <p class="text-xs text-white uppercase">trending Games</p>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4 place-content-center">
+      <!-- slide 1-->
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending2.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending3.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending4.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending5.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending6.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending7.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/trending8.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new3.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="px-3 mx-auto mt-10">
+    <div class="flex items-center space-x-2">
+      <div class="grid w-6 h-6 text-white bg-orange-700 rounded-full place-content-center">
+        <i class='bx bx-game'></i>
+      </div>
+      <p class="text-xs text-white uppercase">New Games</p>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-4 place-content-center">
+      <!-- slide 1-->
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new1.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new2.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new3.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new4.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new5.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new6.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new7.png" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 1-->
+
+      <div class="relative w-48 h-72">
+        <div class="absolute w-full h-full overflow-hidden obje">
+          <img src="./img-vid/img/new8.jpg" alt="" class="object-cover object-center w-full h-full">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-2 py-2 backdrop-blur-md rounded-t-2xl">
+          <div class="flex flex-col">
+            <h5 class="text-sm text-white">Battlefield 2042</h5>
+            <span class="text-xs text-white">Action</span>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div
+              class="flex items-center gap-1 px-2 py-1 text-xs text-yellow-300 rounded-md bg-slate-400 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-star"></i>
+              <span>4.7</span>
+            </div>
+            <div
+              class="grid p-1 text-orange-600 rounded-full bg-slate-50 hover:bg-slate-900 hover:text-white w-7 h-7 place-content-center hover:cursor-pointer">
+              <i class="bx bxs-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="grid px-3 mx-auto mt-10 place-content-center">
+    <a href="http://" class="px-5 py-2 text-sm text-white uppercase bg-orange-700 hover:bg-orange-600">
+      <p>next page</p>
+    </a>
+  </div>
+  <div class="grid mt-4 place-content-center">
+    <h1 class="text-sm font-bold text-white uppercase">
+      Game <span class="text-orange-700  font-light !important">store</span>
+    </h1>
+  </div>
+  <footer class="grid my-5 place-content-center">
+    <div class="text-sm text-slate-400">
+
+      &#169;
+      <a href="https://github.com/kwametinthub">Kwametinthub</a>. All Rights Reserved
+
+
+    </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/public/script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
